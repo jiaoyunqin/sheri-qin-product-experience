@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="秦娇芸的 AI 产品体验设计作品集，聚焦复杂决策系统、Agent 产品与数据驱动体验。">
+  <meta name="theme-color" content="#11120f">
+  <title>秦娇芸｜AI 产品体验设计作品集</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark">SQ</span>
+      <span class="brand-copy">产品体验设计</span>
+    </a>
+    <nav class="site-nav" aria-label="作品集导航">
+      <a href="#case-target">01 目标助手</a>
+      <a href="#case-coupon">02 策略 Agent</a>
+      <a href="#evolution">03 产品演进</a>
+      <a href="#about">关于我</a>
+    </nav>
+    <a class="nav-action" href="./assets/Sheri-Qin-Resume.pdf" target="_blank">
+      <i data-lucide="file-down" aria-hidden="true"></i>
+      简历
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="./assets/target-natural.jpg" alt="大促目标 AI 助手自然水位还原界面">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Sheri Qin · 2027</p>
+        <h1 id="hero-title" class="reveal delay-1">秦娇芸</h1>
+        <p class="hero-role reveal delay-2">AI 产品体验设计 / 复杂决策系统</p>
+        <p class="hero-intro reveal delay-3">把业务规则、数据与 AI 能力，组织成可理解、可验证、可落地的产品体验。</p>
+        <div class="hero-actions reveal delay-4">
+          <a class="button button-primary" href="#case-target">
+            查看案例
+            <i data-lucide="arrow-down" aria-hidden="true"></i>
+          </a>
+          <a class="button button-ghost" href="mailto:sheriqin@gmail.com">
+            联系我
+            <i data-lucide="mail" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <ul class="hero-meta" aria-label="专业标签">
+        <li>B 端复杂工具</li>
+        <li>C 端增长</li>
+        <li>AI Agent</li>
+        <li>数据驱动体验</li>
+      </ul>
+    </section>
+
+    <section class="impact-band" aria-label="业务结果">
+      <div class="impact-grid">
+        <article>
+          <strong>90%+</strong>
+          <span>大促预算预估准确率</span>
+          <small>由 78% 提升</small>
+        </article>
+        <article>
+          <strong>2 pd</strong>
+          <span>单次预估人效</span>
+          <small>由 6 pd 降低</small>
+        </article>
+        <article>
+          <strong>15 min</strong>
+          <span>单份分析报告</span>
+          <small>由 3-4 小时缩短</small>
+        </article>
+        <article>
+          <strong>+0.46%</strong>
+          <span>人均 GMV</span>
+          <small>营销表达智能托管</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-study case-light" id="case-target">
+      <div class="section-shell">
+        <aside class="case-index" aria-label="案例一索引">
+          <span>CASE 01</span>
+          <b>AI 决策工作流</b>
+          <small>2026</small>
+        </aside>
+        <div class="case-content">
+          <header class="case-head reveal-on-scroll">
+            <p class="case-kicker">大促目标 AI 助手</p>
+            <h2>让 AI 测算从黑盒结果，变成可协作的决策流程</h2>
+            <div class="case-meta">
+              <span>产品定义</span>
+              <span>信息架构</span>
+              <span>交互原型</span>
+              <span>前端实现</span>
+            </div>
+          </header>
+
+          <div class="case-brief reveal-on-scroll">
+            <div>
+              <span class="brief-label">问题</span>
+              <p>目标测算依赖表格、文档与专家经验，输入分散、过程难追溯、结果难解释。用户不仅需要一个数字，更需要知道它从哪里来、何时可用、如何修正。</p>
+            </div>
+            <div>
+              <span class="brief-label">设计命题</span>
+              <p>如何把复杂模型包装成业务人员能够独立完成的工作流，同时保留专家校准、来源追溯和结果导出能力？</p>
+            </div>
+          </div>
+
+          <figure class="feature-figure reveal-on-scroll">
+            <button class="image-button" type="button" data-lightbox="./assets/target-natural.jpg" aria-label="放大查看自然水位还原界面">
+              <img src="./assets/target-natural.jpg" alt="自然水位公式、参数调整、版本状态和趋势图同屏展示">
+              <span><i data-lucide="maximize-2" aria-hidden="true"></i></span>
+            </button>
+            <figcaption>
+              <b>把模型逻辑摆到用户面前</b>
+              <span>公式、参数、数据版本与趋势图同屏，用户可修改、重算、恢复，不必在“相信 AI”和“放弃 AI”之间二选一。</span>
+            </figcaption>
+          </figure>
+
+          <section class="design-decisions reveal-on-scroll" aria-labelledby="target-decisions">
+            <div class="section-number">01.1</div>
+            <div>
+              <h3 id="target-decisions">三个关键体验判断</h3>
+              <ol class="decision-list">
+                <li>
+                  <b>以业务流程组织 AI，而不是以聊天组织业务</b>
+                  <p>导航对应“大促信息 → 自然水位 → 大盘目标 → 行业拆分”，AI 对话作为每一步的解释与辅助，而非唯一入口。</p>
+                </li>
+                <li>
+                  <b>让来源、状态和依赖就近可见</b>
+                  <p>知识、Skill、完整度、校验结果与下游引用紧邻当前任务，减少跨页面确认与口径错用。</p>
+                </li>
+                <li>
+                  <b>把不可逆动作留给人</b>
+                  <p>配置、生成、确认与发布分层，草稿不会静默覆盖下游，保留专家修正和结果追责链路。</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <figure class="feature-figure feature-figure-offset reveal-on-scroll">
+            <button class="image-button" type="button" data-lightbox="./assets/target-setup.jpg" aria-label="放大查看大促信息维护界面">
+              <img src="./assets/target-setup.jpg" alt="大促信息、阶段节奏、预算规划与信息完整度界面">
+              <span><i data-lucide="maximize-2" aria-hidden="true"></i></span>
+            </button>
+            <figcaption>
+              <b>用完整度与依赖反馈降低流程焦虑</b>
+              <span>长流程不再依赖记忆：每个模块显示完成状态、缺失项和后续引用范围，帮助用户判断“现在能否继续”。</span>
+            </figcaption>
+          </figure>
+
+          <div class="case-outcome reveal-on-scroll">
+            <div>
+              <span>业务结果</span>
+              <strong>预估准确率 78% → 90%+</strong>
+            </div>
+            <div>
+              <span>效率结果</span>
+              <strong>单次预估 6 pd → 2 pd</strong>
+            </div>
+            <div>
+              <span>产品结果</span>
+              <strong>全周期预算使用率 99.4%</strong>
+            </div>
+          </div>
+
+          <div class="case-links">
+            <a class="text-link" href="https://aibudgetforecast0720.vercel.app/" target="_blank" rel="noreferrer">
+              在线体验
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="text-link" href="https://github.com/jiaoyunqin/ai-Target-Estimation-Assistant-New" target="_blank" rel="noreferrer">
+              查看代码
+              <i data-lucide="github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study case-dark" id="case-coupon">
+      <div class="section-shell">
+        <aside class="case-index" aria-label="案例二索引">
+          <span>CASE 02</span>
+          <b>Agent 决策体验</b>
+          <small>2026</small>
+        </aside>
+        <div class="case-content">
+          <header class="case-head reveal-on-scroll">
+            <p class="case-kicker">消费券策略 Agent</p>
+            <h2>把复杂券策略拆成可推演、可比较、可执行的工作台</h2>
+            <div class="case-meta">
+              <span>Agent 交互</span>
+              <span>决策信息架构</span>
+              <span>数据可视化</span>
+              <span>复杂表单</span>
+            </div>
+          </header>
+
+          <div class="case-brief reveal-on-scroll">
+            <div>
+              <span class="brief-label">问题</span>
+              <p>券策略同时受到增长目标、预算、用户价值、类目价格带、渠道成本和实验结论约束。传统对话式 AI 容易直接给答案，却无法让团队确认前提与执行边界。</p>
+            </div>
+            <div>
+              <span class="brief-label">设计命题</span>
+              <p>如何让 Agent 先暴露假设，再把建议转译成波次、券组、人群、渠道和实验护栏，形成真正可执行的策略包？</p>
+            </div>
+          </div>
+
+          <figure class="feature-figure reveal-on-scroll">
+            <button class="image-button" type="button" data-lightbox="./assets/coupon-plan.jpg" aria-label="放大查看券策略约束设置界面">
+              <img src="./assets/coupon-plan.jpg" alt="活动基线、增长目标、预算区间和成本约束工作台">
+              <span><i data-lucide="maximize-2" aria-hidden="true"></i></span>
+            </button>
+            <figcaption>
+              <b>约束先于答案</b>
+              <span>先确认目标、预算和 CAC 红线，再生成候选方案。缺失实时货盘等信息时明确排除范围，降低 AI 过度承诺。</span>
+            </figcaption>
+          </figure>
+
+          <section class="strategy-grid reveal-on-scroll" aria-labelledby="coupon-decisions">
+            <div class="section-number">02.1</div>
+            <div>
+              <h3 id="coupon-decisions">从推荐到执行的四层结构</h3>
+              <div class="strategy-steps">
+                <article><span>01</span><b>边界</b><p>确认增长目标、预算上限和成本红线。</p></article>
+                <article><span>02</span><b>选择</b><p>并列比较钱效、均衡、增长三套候选。</p></article>
+                <article><span>03</span><b>编排</b><p>展开为波次、券组、人群与渠道矩阵。</p></article>
+                <article><span>04</span><b>验证</b><p>绑定实验分流、指标和止损条件。</p></article>
+              </div>
+            </div>
+          </section>
+
+          <figure class="feature-figure feature-figure-offset reveal-on-scroll">
+            <button class="image-button" type="button" data-lightbox="./assets/coupon-waves.jpg" aria-label="放大查看券波次策略界面">
+              <img src="./assets/coupon-waves.jpg" alt="八个营销波次及对应券组配置">
+              <span><i data-lucide="maximize-2" aria-hidden="true"></i></span>
+            </button>
+            <figcaption>
+              <b>把建议翻译成运营可执行对象</b>
+              <span>每个波次明确领取/使用窗口、券组、人群与动态机制，既支持横向比较，也支持逐层下钻。</span>
+            </figcaption>
+          </figure>
+
+          <div class="case-outcome reveal-on-scroll">
+            <div>
+              <span>业务验证</span>
+              <strong>人均 GMV +0.46%</strong>
+            </div>
+            <div>
+              <span>交易验证</span>
+              <strong>人均支付订单 +0.24%</strong>
+            </div>
+            <div>
+              <span>能力复用</span>
+              <strong>沉淀为营销 AI 投放基座</strong>
+            </div>
+          </div>
+
+          <div class="case-links">
+            <a class="text-link" href="https://ai-coupon-strategy.vercel.app/" target="_blank" rel="noreferrer">
+              在线体验
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="text-link" href="https://github.com/jiaoyunqin/ai--coupon--strategy" target="_blank" rel="noreferrer">
+              查看代码
+              <i data-lucide="github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="evolution" id="evolution">
+      <div class="section-shell">
+        <aside class="case-index" aria-label="案例三索引">
+          <span>CASE 03</span>
+          <b>产品演进</b>
+          <small>2025 → 2026</small>
+        </aside>
+        <div class="case-content">
+          <header class="case-head reveal-on-scroll">
+            <p class="case-kicker">Design evolution</p>
+            <h2>从“聊天 + 报告”，演进到面向任务的 AI 工作区</h2>
+          </header>
+
+          <div class="evolution-controls" role="tablist" aria-label="产品版本对比">
+            <button class="active" type="button" role="tab" aria-selected="true" data-evolution="before">早期原型</button>
+            <button type="button" role="tab" aria-selected="false" data-evolution="after">当前方案</button>
+          </div>
+
+          <div class="evolution-stage reveal-on-scroll">
+            <img data-evolution-image src="./assets/legacy-budget.jpg" alt="早期 AI 预算助手原型">
+            <div class="evolution-copy">
+              <span data-evolution-label>早期原型 · AI 预算助手</span>
+              <h3 data-evolution-title>先验证“对话驱动工作台”是否成立</h3>
+              <p data-evolution-text>用三栏结构连接任务入口、AI 对话与分析报告，验证自然语言修改预算后数据联动的核心体验。</p>
+              <ul data-evolution-points>
+                <li>优势：交互直接，能快速验证 AI 与业务操作联动。</li>
+                <li>问题：模块持续增加后，长报告和多角色入口开始互相挤压。</li>
+                <li>下一步：从页面级功能堆叠，转向任务级信息架构。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="evolution-links">
+            <a class="text-link" href="https://ai-target-estimation-assistant.vercel.app/" target="_blank" rel="noreferrer">
+              查看早期原型
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="text-link" href="https://github.com/jiaoyunqin/ai-Target-Estimation-Assistant" target="_blank" rel="noreferrer">
+              查看代码
+              <i data-lucide="github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <div class="principles-inner">
+        <p class="eyebrow">MY DESIGN LENS</p>
+        <h2 id="principles-title">我如何设计 AI 产品体验</h2>
+        <ol>
+          <li><span>01</span><b>先定义决策，再定义界面</b><p>明确用户在什么条件下做什么判断，避免把复杂业务压缩成一个生成按钮。</p></li>
+          <li><span>02</span><b>让 AI 的依据可见</b><p>来源、口径、置信度和缺失项应靠近建议，而不是藏在说明文档里。</p></li>
+          <li><span>03</span><b>把高频路径做短</b><p>默认给结论和下一步动作，复杂参数、明细与推导按需下钻。</p></li>
+          <li><span>04</span><b>保留人的最终控制</b><p>支持编辑、校验、回退和确认，让 AI 增强判断，而不是替代责任。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <figure class="portrait-wrap reveal-on-scroll">
+          <img src="./assets/portrait.jpg" alt="秦娇芸证件照">
+          <figcaption>上海 · 南京大学商学院</figcaption>
+        </figure>
+        <div class="about-copy reveal-on-scroll">
+          <p class="eyebrow">ABOUT</p>
+          <h2>产品经理背景，正在做更完整的 AI 产品体验。</h2>
+          <p>产品经验覆盖 B 端商家、C 端消费者、AI 基础设施与 AI 应用，具备从数据基建到 Agent 产品化的全链路落地能力。做事务实，执行投入度高，对新技术和新业务方向有较强的探索意愿与快速学习能力。</p>
+          <dl>
+            <div><dt>教育</dt><dd>南京大学 · 企业管理硕士 / 市场营销本科</dd></div>
+            <div><dt>能力</dt><dd>产品策略、交互原型、数据分析、AI Coding</dd></div>
+            <div><dt>工具</dt><dd>Figma、Axure、SQL、Codex、Trae</dd></div>
+          </dl>
+          <div class="about-actions">
+            <a class="button button-dark" href="mailto:sheriqin@gmail.com">
+              <i data-lucide="mail" aria-hidden="true"></i>
+              sheriqin@gmail.com
+            </a>
+            <a class="button button-outline" href="./assets/Sheri-Qin-Resume.pdf" target="_blank">
+              <i data-lucide="file-down" aria-hidden="true"></i>
+              下载简历
+            </a>
+            <a class="button button-outline" href="./assets/Sheri-Qin-Product-Experience-Portfolio.pdf" target="_blank">
+              <i data-lucide="panels-top-left" aria-hidden="true"></i>
+              作品集 PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Sheri Qin</span>
+    <span>案例中的业务名称、ID 与数据均为脱敏演示信息</span>
+  </footer>
+
+  <dialog class="lightbox" data-lightbox-dialog aria-label="界面截图预览">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="关闭预览">
+      <i data-lucide="x" aria-hidden="true"></i>
+    </button>
+    <img data-lightbox-image src="./assets/target-natural.jpg" alt="产品界面截图">
+  </dialog>
+</body>
+</html>
